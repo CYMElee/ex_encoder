@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/lee/workspace/ROS_ws/ex_encoder/devel:$CMAKE_PREFIX_PATH"
-export PWD='/home/lee/workspace/ROS_ws/ex_encoder/build'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/lee/workspace/ROS_ws/ex_encoder/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH='/home/lee/workspace/ROS_ws/ex_encoder/src:/home/lee/workspace/ROS_ws/Robotice_Final/src:/opt/ros/noetic/share'
+export CMAKE_PREFIX_PATH="/home/ubuntu/yajie_ws/ex_encoder/devel:$CMAKE_PREFIX_PATH"
+export PWD='/home/ubuntu/yajie_ws/ex_encoder/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/ubuntu/yajie_ws/ex_encoder/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/ubuntu/yajie_ws/ex_encoder/src:$ROS_PACKAGE_PATH"

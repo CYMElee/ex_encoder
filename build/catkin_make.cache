@@ -1,2 +1,2 @@
-
--DCATKIN_DEVEL_PREFIX=/home/lee/workspace/ROS_ws/ex_encoder/devel -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ROS_ws/ex_encoder/install -G Unix Makefiles
+encoder
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/yajie_ws/ex_encoder/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/yajie_ws/ex_encoder/install -G Unix Makefiles

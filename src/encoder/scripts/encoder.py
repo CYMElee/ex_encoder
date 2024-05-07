@@ -15,16 +15,17 @@ BAUD_RATE = 115200
 
 msg = String()
 
-handle = pi.serial_open("/dev/ttyAMA0", BAUD_RATE)
+handle = pi.serial_open("/dev/ttyUSB0", BAUD_RATE)
 
-def uart2rpi(data,msg):
-
+def uart2rpi(data):
+    if  isinstance(data,str):
+        return "*"
     data = data.decode()
     start_index = data.find("@")
     data = data[start_index:] 
-    end_index = data.find("@")
-    data = data[start_index:end_index]
-    msg.data = [data]
+    end_index = data.find(";")
+    data = data[:end_index+1]
+    return data
 
 
 def clear_uart_buffer():
@@ -33,13 +34,13 @@ def clear_uart_buffer():
 
 def main():
     rospy.init_node('UART_FROM_STM32',anonymous=True)
-    pub = rospy.Publisher('encoder_value',String,queue_size=10)
+    pub = rospy.Publisher('encoder_str',String,queue_size=10)
     clear_uart_buffer()
     time.sleep(5)
     rate = rospy.Rate(100)
     while not rospy.is_shutdown():
         (count, data) = pi.serial_read(handle, 100)
-        uart2rpi(data,msg)
+        msg.data = uart2rpi(data)
         pub.publish(msg)
         rate.sleep()
 

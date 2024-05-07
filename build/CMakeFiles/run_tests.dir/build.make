@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lee/workspace/ROS_ws/ex_encoder/src
+CMAKE_SOURCE_DIR = /home/ubuntu/yajie_ws/ex_encoder/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lee/workspace/ROS_ws/ex_encoder/build
+CMAKE_BINARY_DIR = /home/ubuntu/yajie_ws/ex_encoder/build
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/lee/workspace/ROS_ws/ex_encoder/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lee/workspace/ROS_ws/ex_encoder/src /home/lee/workspace/ROS_ws/ex_encoder/src /home/lee/workspace/ROS_ws/ex_encoder/build /home/lee/workspace/ROS_ws/ex_encoder/build /home/lee/workspace/ROS_ws/ex_encoder/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/yajie_ws/ex_encoder/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/yajie_ws/ex_encoder/src /home/ubuntu/yajie_ws/ex_encoder/src /home/ubuntu/yajie_ws/ex_encoder/build /home/ubuntu/yajie_ws/ex_encoder/build /home/ubuntu/yajie_ws/ex_encoder/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 
